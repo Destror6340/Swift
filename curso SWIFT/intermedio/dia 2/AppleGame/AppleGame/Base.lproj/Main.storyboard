@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppleGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R5v-LC-Goa">
+                                <rect key="frame" x="0.0" y="24" width="1180" height="776"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree 0" translatesAutoresizingMaskIntoConstraints="NO" id="mrK-NC-v9l">
+                                        <rect key="frame" x="0.0" y="0.0" width="1180" height="451"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BAu-GF-wS4">
+                                        <rect key="frame" x="0.0" y="451" width="1180" height="325"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gbb-lO-OmX">
+                                                <rect key="frame" x="317.5" y="0.0" width="545" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytm-Kf-PTT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Ytm-Kf-PTT" secondAttribute="height" id="eMH-MF-xtx"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Q">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PBT-ej-yMf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-vk-TKg">
+                                                        <rect key="frame" x="55" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Q8i-vk-TKg" secondAttribute="height" id="yK3-2d-NG0"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="W">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yJ8-8V-ocO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jz1-JK-aXg">
+                                                        <rect key="frame" x="110" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Jz1-JK-aXg" secondAttribute="height" id="7VW-eM-3PE"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="E">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rcj-xA-Hc1"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlu-la-lZg">
+                                                        <rect key="frame" x="165" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hlu-la-lZg" secondAttribute="height" id="eZK-ah-tX8"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="R">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k27-sE-P14"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nct-X3-27A">
+                                                        <rect key="frame" x="220" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="nct-X3-27A" secondAttribute="height" id="nYz-iN-eMX"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="T">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kRC-vf-BmX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClQ-kN-3iR">
+                                                        <rect key="frame" x="275" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ClQ-kN-3iR" secondAttribute="height" id="ZWq-fO-k1d"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Y">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSo-9z-PNS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5f-tW-igN">
+                                                        <rect key="frame" x="330" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="m5f-tW-igN" secondAttribute="height" id="Zis-yZ-4gU"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="U">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w2C-uO-r44"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37n-lo-Vj0">
+                                                        <rect key="frame" x="385" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="37n-lo-Vj0" secondAttribute="height" id="N6T-NZ-f6D"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="I">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l1Q-we-e5j"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="392-Nv-Rdd">
+                                                        <rect key="frame" x="440" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="392-Nv-Rdd" secondAttribute="height" id="4Es-wJ-NW4"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="O">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="USq-4c-gZi"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMR-IZ-aKv">
+                                                        <rect key="frame" x="495" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="PMR-IZ-aKv" secondAttribute="height" id="uIn-cR-N1z"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="P">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBw-Gz-NTD"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Jz1-JK-aXg" firstAttribute="width" secondItem="Jz1-JK-aXg" secondAttribute="height" id="5rq-Va-IdJ"/>
+                                                    <constraint firstItem="ClQ-kN-3iR" firstAttribute="width" secondItem="ClQ-kN-3iR" secondAttribute="height" id="Bf5-9h-WzP"/>
+                                                    <constraint firstItem="nct-X3-27A" firstAttribute="width" secondItem="nct-X3-27A" secondAttribute="height" id="HLX-mC-5Cr"/>
+                                                    <constraint firstItem="hlu-la-lZg" firstAttribute="width" secondItem="hlu-la-lZg" secondAttribute="height" id="JiF-aj-IQm"/>
+                                                    <constraint firstItem="392-Nv-Rdd" firstAttribute="width" secondItem="392-Nv-Rdd" secondAttribute="height" id="VuS-NL-69C"/>
+                                                    <constraint firstItem="m5f-tW-igN" firstAttribute="width" secondItem="m5f-tW-igN" secondAttribute="height" id="brM-yG-nDy"/>
+                                                    <constraint firstItem="Q8i-vk-TKg" firstAttribute="width" secondItem="Q8i-vk-TKg" secondAttribute="height" id="eAg-Dq-kro"/>
+                                                    <constraint firstItem="PMR-IZ-aKv" firstAttribute="width" secondItem="PMR-IZ-aKv" secondAttribute="height" id="mxD-AA-uIH"/>
+                                                    <constraint firstItem="37n-lo-Vj0" firstAttribute="width" secondItem="37n-lo-Vj0" secondAttribute="height" id="rIq-yT-Fdn"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EBa-lG-Det">
+                                                <rect key="frame" x="317.5" y="55" width="545" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLt-0n-OKd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="jLt-0n-OKd" secondAttribute="height" id="U8u-xy-Pm3"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="A">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3oP-pK-Igq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZB-5O-X1v">
+                                                        <rect key="frame" x="55" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="GZB-5O-X1v" secondAttribute="height" id="WFi-gv-cbi"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="S">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w7x-Rg-S58"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhY-ai-lsE">
+                                                        <rect key="frame" x="110" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="bhY-ai-lsE" secondAttribute="height" id="acR-c4-FL4"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="D">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UdD-qB-3p2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2c-lP-CW0">
+                                                        <rect key="frame" x="165" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="K2c-lP-CW0" secondAttribute="height" id="oyb-7M-P3q"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="F">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0q-5u-vkk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYE-hO-WBf">
+                                                        <rect key="frame" x="220" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="TYE-hO-WBf" secondAttribute="height" id="a7K-kp-4dq"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="G">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K46-rQ-Tcz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBs-sA-spZ">
+                                                        <rect key="frame" x="275" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="cBs-sA-spZ" secondAttribute="height" id="qVF-4s-QwY"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="H">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k27-cj-omi"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pL-rJ-HFa">
+                                                        <rect key="frame" x="330" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="0pL-rJ-HFa" secondAttribute="height" id="1Fx-1q-oV4"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="J">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3fR-51-9tW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poU-cV-MUY">
+                                                        <rect key="frame" x="385" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="poU-cV-MUY" secondAttribute="height" id="p3f-is-oAm"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="K">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MiZ-RD-4Id"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11A-v0-gkB">
+                                                        <rect key="frame" x="440" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="11A-v0-gkB" secondAttribute="height" id="e1T-cH-7GI"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="L">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="50D-61-GNE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjs-Wk-S7x">
+                                                        <rect key="frame" x="495" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="rjs-Wk-S7x" secondAttribute="height" id="hHJ-q0-jj8"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Ñ">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAQ-xY-ZZU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="bhY-ai-lsE" firstAttribute="width" secondItem="bhY-ai-lsE" secondAttribute="height" id="Aag-vA-bRk"/>
+                                                    <constraint firstItem="cBs-sA-spZ" firstAttribute="width" secondItem="cBs-sA-spZ" secondAttribute="height" id="CML-TY-Fkp"/>
+                                                    <constraint firstItem="GZB-5O-X1v" firstAttribute="width" secondItem="GZB-5O-X1v" secondAttribute="height" id="FXh-KL-hGS"/>
+                                                    <constraint firstItem="TYE-hO-WBf" firstAttribute="width" secondItem="TYE-hO-WBf" secondAttribute="height" id="MSq-JR-4p5"/>
+                                                    <constraint firstItem="11A-v0-gkB" firstAttribute="width" secondItem="11A-v0-gkB" secondAttribute="height" id="cUr-hU-TX7"/>
+                                                    <constraint firstItem="poU-cV-MUY" firstAttribute="width" secondItem="poU-cV-MUY" secondAttribute="height" id="fiy-pF-R2M"/>
+                                                    <constraint firstItem="K2c-lP-CW0" firstAttribute="width" secondItem="K2c-lP-CW0" secondAttribute="height" id="fte-cO-4mG"/>
+                                                    <constraint firstItem="rjs-Wk-S7x" firstAttribute="width" secondItem="rjs-Wk-S7x" secondAttribute="height" id="g3B-MG-Hb8"/>
+                                                    <constraint firstItem="0pL-rJ-HFa" firstAttribute="width" secondItem="0pL-rJ-HFa" secondAttribute="height" id="pel-MJ-Qp1"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ifc-yc-3UP">
+                                                <rect key="frame" x="400" y="110" width="380" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vg-va-lPe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="0Vg-va-lPe" secondAttribute="height" id="PdD-tk-H42"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Z">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huV-Yg-1qe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJb-bJ-DtM">
+                                                        <rect key="frame" x="55" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="aJb-bJ-DtM" secondAttribute="height" id="6NF-nz-gN4"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="X">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qto-sb-7o2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLR-Bo-By1">
+                                                        <rect key="frame" x="110" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="eLR-Bo-By1" secondAttribute="height" id="bvb-98-cED"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="C">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hds-j7-eTz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISX-qR-Ns6">
+                                                        <rect key="frame" x="165" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ISX-qR-Ns6" secondAttribute="height" id="UkU-Po-cEa"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="V">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mqV-f5-e5R"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMD-MP-JAy">
+                                                        <rect key="frame" x="220" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="PMD-MP-JAy" secondAttribute="height" id="nzK-LI-gG9"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="B">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NDX-Q7-Ewu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81Z-hj-JcY">
+                                                        <rect key="frame" x="275" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="81Z-hj-JcY" secondAttribute="height" id="4sc-mZ-81R"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="N">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyC-19-tDw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tld-wo-5XC">
+                                                        <rect key="frame" x="330" y="0.0" width="50" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="tld-wo-5XC" secondAttribute="height" id="KLX-0S-XDr"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="M">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="ActionsButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDr-u4-lQ3"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="aJb-bJ-DtM" firstAttribute="width" secondItem="aJb-bJ-DtM" secondAttribute="height" id="1mQ-bX-cAa"/>
+                                                    <constraint firstItem="ISX-qR-Ns6" firstAttribute="width" secondItem="ISX-qR-Ns6" secondAttribute="height" id="HIF-OC-IVJ"/>
+                                                    <constraint firstItem="81Z-hj-JcY" firstAttribute="width" secondItem="81Z-hj-JcY" secondAttribute="height" id="XAr-uT-PeV"/>
+                                                    <constraint firstItem="tld-wo-5XC" firstAttribute="width" secondItem="tld-wo-5XC" secondAttribute="height" id="pVX-FS-esQ"/>
+                                                    <constraint firstItem="PMD-MP-JAy" firstAttribute="width" secondItem="PMD-MP-JAy" secondAttribute="height" id="rmb-C4-hFr"/>
+                                                    <constraint firstItem="eLR-Bo-By1" firstAttribute="width" secondItem="eLR-Bo-By1" secondAttribute="height" id="yZC-eV-xFx"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzb-WJ-mxX">
+                                                <rect key="frame" x="554.5" y="165" width="71" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojB-Hh-wHV">
+                                                <rect key="frame" x="560.5" y="220" width="59" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xV9-gH-WQ2">
+                                                <rect key="frame" x="545.5" y="275" width="89" height="50"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Reiniciar"/>
+                                                <connections>
+                                                    <action selector="reestatButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xzv-tB-KzB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R5v-LC-Goa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nmw-2r-M40"/>
+                            <constraint firstItem="R5v-LC-Goa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RSx-hm-uiK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R5v-LC-Goa" secondAttribute="bottom" id="aor-xb-gur"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R5v-LC-Goa" secondAttribute="trailing" id="f4t-7k-2K1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CorrectWordLabel" destination="nzb-WJ-mxX" id="Zas-XZ-SjR"/>
+                        <outlet property="ScoreLabel" destination="ojB-Hh-wHV" id="VuF-Hh-3UN"/>
+                        <outlet property="ThreeImage" destination="mrK-NC-v9l" id="z0M-tO-n6M"/>
+                        <outlet property="restartButton" destination="xV9-gH-WQ2" id="sOZ-g4-DTQ"/>
+                        <outletCollection property="LetterButtons" destination="Ytm-Kf-PTT" collectionClass="NSMutableArray" id="aJk-dg-UUC"/>
+                        <outletCollection property="LetterButtons" destination="Q8i-vk-TKg" collectionClass="NSMutableArray" id="GgQ-dc-pfJ"/>
+                        <outletCollection property="LetterButtons" destination="Jz1-JK-aXg" collectionClass="NSMutableArray" id="ncv-XR-F25"/>
+                        <outletCollection property="LetterButtons" destination="hlu-la-lZg" collectionClass="NSMutableArray" id="w5m-KH-tOf"/>
+                        <outletCollection property="LetterButtons" destination="nct-X3-27A" collectionClass="NSMutableArray" id="jHm-DN-1Up"/>
+                        <outletCollection property="LetterButtons" destination="ClQ-kN-3iR" collectionClass="NSMutableArray" id="pkB-lw-LU1"/>
+                        <outletCollection property="LetterButtons" destination="m5f-tW-igN" collectionClass="NSMutableArray" id="m0f-26-hJV"/>
+                        <outletCollection property="LetterButtons" destination="37n-lo-Vj0" collectionClass="NSMutableArray" id="jTt-gB-GfX"/>
+                        <outletCollection property="LetterButtons" destination="392-Nv-Rdd" collectionClass="NSMutableArray" id="E2d-Sv-MVY"/>
+                        <outletCollection property="LetterButtons" destination="PMR-IZ-aKv" collectionClass="NSMutableArray" id="pnR-J8-v8v"/>
+                        <outletCollection property="LetterButtons" destination="jLt-0n-OKd" collectionClass="NSMutableArray" id="bL0-0y-D3n"/>
+                        <outletCollection property="LetterButtons" destination="GZB-5O-X1v" collectionClass="NSMutableArray" id="mRf-ge-Sso"/>
+                        <outletCollection property="LetterButtons" destination="bhY-ai-lsE" collectionClass="NSMutableArray" id="B6E-1G-MfV"/>
+                        <outletCollection property="LetterButtons" destination="K2c-lP-CW0" collectionClass="NSMutableArray" id="v1g-JX-IOO"/>
+                        <outletCollection property="LetterButtons" destination="TYE-hO-WBf" collectionClass="NSMutableArray" id="ywb-bA-nUH"/>
+                        <outletCollection property="LetterButtons" destination="cBs-sA-spZ" collectionClass="NSMutableArray" id="j6l-o6-9j4"/>
+                        <outletCollection property="LetterButtons" destination="0pL-rJ-HFa" collectionClass="NSMutableArray" id="poQ-J2-xsf"/>
+                        <outletCollection property="LetterButtons" destination="poU-cV-MUY" collectionClass="NSMutableArray" id="Y62-HU-Jaf"/>
+                        <outletCollection property="LetterButtons" destination="11A-v0-gkB" collectionClass="NSMutableArray" id="n1z-sU-EQd"/>
+                        <outletCollection property="LetterButtons" destination="rjs-Wk-S7x" collectionClass="NSMutableArray" id="Gf2-Cr-OD4"/>
+                        <outletCollection property="LetterButtons" destination="0Vg-va-lPe" collectionClass="NSMutableArray" id="qIF-xR-XRg"/>
+                        <outletCollection property="LetterButtons" destination="aJb-bJ-DtM" collectionClass="NSMutableArray" id="guI-XA-yFs"/>
+                        <outletCollection property="LetterButtons" destination="eLR-Bo-By1" collectionClass="NSMutableArray" id="i2v-JG-kKv"/>
+                        <outletCollection property="LetterButtons" destination="ISX-qR-Ns6" collectionClass="NSMutableArray" id="csJ-GI-AqB"/>
+                        <outletCollection property="LetterButtons" destination="PMD-MP-JAy" collectionClass="NSMutableArray" id="zeS-5g-94r"/>
+                        <outletCollection property="LetterButtons" destination="81Z-hj-JcY" collectionClass="NSMutableArray" id="Ewq-Xr-6QV"/>
+                        <outletCollection property="LetterButtons" destination="tld-wo-5XC" collectionClass="NSMutableArray" id="FqA-Ig-Kdp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12.203389830508476" y="8.7804878048780495"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tree 0" width="600" height="945"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

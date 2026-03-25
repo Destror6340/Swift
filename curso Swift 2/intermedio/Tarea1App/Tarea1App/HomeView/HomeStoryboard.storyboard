@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Tarea1App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWe-Vn-JJN">
+                                <rect key="frame" x="56" y="378.66666666666669" width="280" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oe3-5W-G3R">
+                                <rect key="frame" x="95" y="312.66666666666669" width="202" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SVH-pv-q1q">
+                                <rect key="frame" x="76" y="103.99999999999999" width="240" height="138.66666666666663"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="oe3-5W-G3R" firstAttribute="top" secondItem="SVH-pv-q1q" secondAttribute="bottom" constant="70" id="0Xq-3A-Hhe"/>
+                            <constraint firstItem="FWe-Vn-JJN" firstAttribute="top" secondItem="oe3-5W-G3R" secondAttribute="bottom" constant="45" id="57r-PT-LwL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oe3-5W-G3R" secondAttribute="trailing" constant="96" id="DVl-kH-0fh"/>
+                            <constraint firstItem="FWe-Vn-JJN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="56" id="Fwe-XM-V2F"/>
+                            <constraint firstItem="SVH-pv-q1q" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="45" id="PR1-c1-FW0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SVH-pv-q1q" secondAttribute="trailing" constant="77" id="Pzf-hf-GT4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FWe-Vn-JJN" secondAttribute="trailing" constant="57" id="QT4-K4-24E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="FWe-Vn-JJN" secondAttribute="bottom" constant="419" id="XAW-H6-28b"/>
+                            <constraint firstItem="oe3-5W-G3R" firstAttribute="top" secondItem="SVH-pv-q1q" secondAttribute="bottom" constant="70" id="ar5-5O-64G"/>
+                            <constraint firstItem="SVH-pv-q1q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="76" id="klc-OW-Fng"/>
+                            <constraint firstItem="FWe-Vn-JJN" firstAttribute="top" secondItem="oe3-5W-G3R" secondAttribute="bottom" constant="45" id="qLb-0m-ycg"/>
+                            <constraint firstItem="oe3-5W-G3R" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="95" id="sn3-oy-pj7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageProfile" destination="SVH-pv-q1q" id="3Sa-dq-QBL"/>
+                        <outlet property="userLabel" destination="FWe-Vn-JJN" id="rnp-JP-ZSu"/>
+                        <outlet property="welcomeLabel" destination="oe3-5W-G3R" id="hmh-Ky-is8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

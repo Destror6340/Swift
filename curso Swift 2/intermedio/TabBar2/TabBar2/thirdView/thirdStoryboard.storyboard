@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Third View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ThirdVC" id="Y6W-OH-hqX" customClass="thirdViewController" customModule="TabBar2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWz-hL-UPd">
+                                <rect key="frame" x="140" y="119" width="113" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7SV-BB-GbS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZUi-dm-p8Z">
+                                <rect key="frame" x="90" y="234" width="213" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="mPn-j5-osp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owJ-Zd-vcp">
+                                <rect key="frame" x="100" y="474" width="193" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="bXJ-cv-idX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZUi-dm-p8Z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="90" id="4Lc-pX-dI7"/>
+                            <constraint firstItem="owJ-Zd-vcp" firstAttribute="top" secondItem="ZUi-dm-p8Z" secondAttribute="bottom" constant="100" id="7dT-1f-kiF"/>
+                            <constraint firstItem="fWz-hL-UPd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="Aej-qI-3kc"/>
+                            <constraint firstItem="ZUi-dm-p8Z" firstAttribute="top" secondItem="fWz-hL-UPd" secondAttribute="bottom" constant="90" id="EJf-9R-p03"/>
+                            <constraint firstItem="owJ-Zd-vcp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="HPQ-Jf-5ct"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZUi-dm-p8Z" secondAttribute="trailing" constant="90" id="LVK-o7-or1"/>
+                            <constraint firstItem="fWz-hL-UPd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="140" id="OFJ-Q1-NJL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fWz-hL-UPd" secondAttribute="trailing" constant="140" id="gF5-K6-XMV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="owJ-Zd-vcp" secondAttribute="trailing" constant="100" id="uvX-Yr-Qo6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ZUi-dm-p8Z" id="1x7-iM-ghz"/>
+                        <outlet property="nameLabel" destination="owJ-Zd-vcp" id="G4l-wh-SPD"/>
+                        <outlet property="titleLabel" destination="fWz-hL-UPd" id="2db-Q0-3XB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

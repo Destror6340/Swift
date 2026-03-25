@@ -1,0 +1,16 @@
+Corte
+Como se mencionó, cuando IB  0, el transistor se encuentra en la región de corte de su operación. Esto se muestra en la figura 4-13 con la terminal de la base abierta, lo que produce una corriente de cero en la base. En esta condición, existe una cantidad muy pequeña de corriente de
+fuga en el colector, ICEO, debido principalmente a portadores producidos térmicamente. Como
+ICEO es extremadamente pequeña, normalmente se omite en el análisis de circuitos, de tal forma
+que VCE  VCC. En la región de corte, ni la unión base-emisor ni la unión base-colector están polarizadas en directa. El subíndice CEO representa colector con respecto a emisor con la base
+abierto
+
+
+
+
+Saturación
+Cuando la unión base-emisor se polariza en directa y la corriente en la base se incrementa, la corriente en el colector también lo hace (IC  bCDIB) y VCE se reduce a consecuencia de más caída
+a través del resistor del colector (VCE  VCC  ICRC) (figura 4-14). Cuando VCE llega a su valor
+de saturación, VCE(sat), la unión base-colector se polariza en directa e IC ya no puede incrementarse más, incluso con un incremento continuo de IB. En el punto de saturación, la relación IC 
+bCDIB ya no es válida. VCE(sat) para un transistor ocurre en alguna parte debajo de la inflexión de
+las curvas de colector y normalmente es de sólo unos cuantos décimos de un volt

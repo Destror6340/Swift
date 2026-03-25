@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9A044472A85470B0004C530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A044462A85470B0004C530 /* AppDelegate.swift */; };
+		A9A044492A85470B0004C530 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A044482A85470B0004C530 /* SceneDelegate.swift */; };
+		A9A044502A85470B0004C530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A0444F2A85470B0004C530 /* Assets.xcassets */; };
+		A9A044532A85470B0004C530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A044512A85470B0004C530 /* LaunchScreen.storyboard */; };
+		A9A0445E2A85470C0004C530 /* ElectroHelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0445D2A85470C0004C530 /* ElectroHelpTests.swift */; };
+		A9A044682A85470C0004C530 /* ElectroHelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A044672A85470C0004C530 /* ElectroHelpUITests.swift */; };
+		A9A0446A2A85470C0004C530 /* ElectroHelpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A044692A85470C0004C530 /* ElectroHelpUITestsLaunchTests.swift */; };
+		A9A0447C2A854D590004C530 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0447B2A854D590004C530 /* LogInViewController.swift */; };
+		A9A0447E2A854D6E0004C530 /* LogInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A0447D2A854D6E0004C530 /* LogInStoryboard.storyboard */; };
+		A9A044802A854EC20004C530 /* ResistorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0447F2A854EC20004C530 /* ResistorViewController.swift */; };
+		A9A044822A854ECE0004C530 /* ResistorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A044812A854ECE0004C530 /* ResistorStoryboard.storyboard */; };
+		A9A044842A854EE10004C530 /* CapacitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A044832A854EE10004C530 /* CapacitorViewController.swift */; };
+		A9A044862A854EF10004C530 /* CapacitorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A044852A854EF10004C530 /* CapacitorStoryboard.storyboard */; };
+		A9A044882A854F040004C530 /* TransistorStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A044872A854F040004C530 /* TransistorStoryboard.storyboard */; };
+		A9A0448A2A854F160004C530 /* TransistorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A044892A854F160004C530 /* TransistorViewController.swift */; };
+		A9A0448C2A854F4A0004C530 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0448B2A854F4A0004C530 /* TabBarViewController.swift */; };
+		A9B532E02B4C719E00E2782A /* TransistorModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9B532DE2B4C719E00E2782A /* TransistorModel.xcdatamodeld */; };
+		A9B532E22B4C8E8900E2782A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B532E12B4C8E8900E2782A /* CoreDataManager.swift */; };
+		A9B8290A2AAFB75300FA9BDC /* TransistorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B829092AAFB75300FA9BDC /* TransistorModel.swift */; };
+		A9CDC2462A86C94100DF45C6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDC2452A86C94100DF45C6 /* Colors.swift */; };
+		A9D3B5172B4DD624000BF49A /* Transistor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D3B5152B4DD623000BF49A /* Transistor+CoreDataClass.swift */; };
+		A9D3B5182B4DD624000BF49A /* Transistor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D3B5162B4DD623000BF49A /* Transistor+CoreDataProperties.swift */; };
+		A9EE74E12B06D43900676DB7 /* TransitorCircuitsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EE74E02B06D43900676DB7 /* TransitorCircuitsStoryboard.storyboard */; };
+		A9EE74E52B06D47E00676DB7 /* TransistorCircuitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE74E42B06D47E00676DB7 /* TransistorCircuitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9A0445A2A85470B0004C530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9A0443B2A85470A0004C530 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9A044422A85470B0004C530;
+			remoteInfo = ElectroHelp;
+		};
+		A9A044642A85470C0004C530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9A0443B2A85470A0004C530 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9A044422A85470B0004C530;
+			remoteInfo = ElectroHelp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9A044432A85470B0004C530 /* ElectroHelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectroHelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A044462A85470B0004C530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9A044482A85470B0004C530 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9A0444F2A85470B0004C530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9A044522A85470B0004C530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9A044542A85470B0004C530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9A044592A85470B0004C530 /* ElectroHelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectroHelpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A0445D2A85470C0004C530 /* ElectroHelpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroHelpTests.swift; sourceTree = "<group>"; };
+		A9A044632A85470C0004C530 /* ElectroHelpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectroHelpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A044672A85470C0004C530 /* ElectroHelpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroHelpUITests.swift; sourceTree = "<group>"; };
+		A9A044692A85470C0004C530 /* ElectroHelpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectroHelpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9A0447B2A854D590004C530 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		A9A0447D2A854D6E0004C530 /* LogInStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInStoryboard.storyboard; sourceTree = "<group>"; };
+		A9A0447F2A854EC20004C530 /* ResistorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResistorViewController.swift; sourceTree = "<group>"; };
+		A9A044812A854ECE0004C530 /* ResistorStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResistorStoryboard.storyboard; sourceTree = "<group>"; };
+		A9A044832A854EE10004C530 /* CapacitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacitorViewController.swift; sourceTree = "<group>"; };
+		A9A044852A854EF10004C530 /* CapacitorStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CapacitorStoryboard.storyboard; sourceTree = "<group>"; };
+		A9A044872A854F040004C530 /* TransistorStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransistorStoryboard.storyboard; sourceTree = "<group>"; };
+		A9A044892A854F160004C530 /* TransistorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransistorViewController.swift; sourceTree = "<group>"; };
+		A9A0448B2A854F4A0004C530 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A9B532DF2B4C719E00E2782A /* TransistorModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TransistorModel.xcdatamodel; sourceTree = "<group>"; };
+		A9B532E12B4C8E8900E2782A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		A9B829092AAFB75300FA9BDC /* TransistorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransistorModel.swift; sourceTree = "<group>"; };
+		A9CDC2452A86C94100DF45C6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A9D3B5152B4DD623000BF49A /* Transistor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transistor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A9D3B5162B4DD623000BF49A /* Transistor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transistor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A9EE74E02B06D43900676DB7 /* TransitorCircuitsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransitorCircuitsStoryboard.storyboard; sourceTree = "<group>"; };
+		A9EE74E42B06D47E00676DB7 /* TransistorCircuitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransistorCircuitViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9A044402A85470B0004C530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A044562A85470B0004C530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A044602A85470C0004C530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9A0443A2A85470A0004C530 = {
+			isa = PBXGroup;
+			children = (
+				A9A044452A85470B0004C530 /* ElectroHelp */,
+				A9A0445C2A85470B0004C530 /* ElectroHelpTests */,
+				A9A044662A85470C0004C530 /* ElectroHelpUITests */,
+				A9A044442A85470B0004C530 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9A044442A85470B0004C530 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9A044432A85470B0004C530 /* ElectroHelp.app */,
+				A9A044592A85470B0004C530 /* ElectroHelpTests.xctest */,
+				A9A044632A85470C0004C530 /* ElectroHelpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9A044452A85470B0004C530 /* ElectroHelp */ = {
+			isa = PBXGroup;
+			children = (
+				A9D3B5162B4DD623000BF49A /* Transistor+CoreDataProperties.swift */,
+				A9D3B5152B4DD623000BF49A /* Transistor+CoreDataClass.swift */,
+				A9B532DE2B4C719E00E2782A /* TransistorModel.xcdatamodeld */,
+				A9EE74DF2B06D3ED00676DB7 /* TransistorCircuits */,
+				A9A0447A2A854B4B0004C530 /* LogIn */,
+				A9A044792A8547C70004C530 /* TabBar */,
+				A9A044782A8547C10004C530 /* Transistor */,
+				A9A044772A8547B90004C530 /* Capacitor */,
+				A9A044762A8547AD0004C530 /* Resistor */,
+				A9A044462A85470B0004C530 /* AppDelegate.swift */,
+				A9A044482A85470B0004C530 /* SceneDelegate.swift */,
+				A9B829092AAFB75300FA9BDC /* TransistorModel.swift */,
+				A9A0444F2A85470B0004C530 /* Assets.xcassets */,
+				A9A044512A85470B0004C530 /* LaunchScreen.storyboard */,
+				A9A044542A85470B0004C530 /* Info.plist */,
+			);
+			path = ElectroHelp;
+			sourceTree = "<group>";
+		};
+		A9A0445C2A85470B0004C530 /* ElectroHelpTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0445D2A85470C0004C530 /* ElectroHelpTests.swift */,
+			);
+			path = ElectroHelpTests;
+			sourceTree = "<group>";
+		};
+		A9A044662A85470C0004C530 /* ElectroHelpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9A044672A85470C0004C530 /* ElectroHelpUITests.swift */,
+				A9A044692A85470C0004C530 /* ElectroHelpUITestsLaunchTests.swift */,
+			);
+			path = ElectroHelpUITests;
+			sourceTree = "<group>";
+		};
+		A9A044762A8547AD0004C530 /* Resistor */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0447F2A854EC20004C530 /* ResistorViewController.swift */,
+				A9A044812A854ECE0004C530 /* ResistorStoryboard.storyboard */,
+				A9CDC2452A86C94100DF45C6 /* Colors.swift */,
+			);
+			path = Resistor;
+			sourceTree = "<group>";
+		};
+		A9A044772A8547B90004C530 /* Capacitor */ = {
+			isa = PBXGroup;
+			children = (
+				A9A044832A854EE10004C530 /* CapacitorViewController.swift */,
+				A9A044852A854EF10004C530 /* CapacitorStoryboard.storyboard */,
+			);
+			path = Capacitor;
+			sourceTree = "<group>";
+		};
+		A9A044782A8547C10004C530 /* Transistor */ = {
+			isa = PBXGroup;
+			children = (
+				A9A044872A854F040004C530 /* TransistorStoryboard.storyboard */,
+				A9A044892A854F160004C530 /* TransistorViewController.swift */,
+				A9B532E12B4C8E8900E2782A /* CoreDataManager.swift */,
+			);
+			path = Transistor;
+			sourceTree = "<group>";
+		};
+		A9A044792A8547C70004C530 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0448B2A854F4A0004C530 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		A9A0447A2A854B4B0004C530 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0447B2A854D590004C530 /* LogInViewController.swift */,
+				A9A0447D2A854D6E0004C530 /* LogInStoryboard.storyboard */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		A9EE74DF2B06D3ED00676DB7 /* TransistorCircuits */ = {
+			isa = PBXGroup;
+			children = (
+				A9EE74E02B06D43900676DB7 /* TransitorCircuitsStoryboard.storyboard */,
+				A9EE74E42B06D47E00676DB7 /* TransistorCircuitViewController.swift */,
+			);
+			path = TransistorCircuits;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9A044422A85470B0004C530 /* ElectroHelp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A0446D2A85470C0004C530 /* Build configuration list for PBXNativeTarget "ElectroHelp" */;
+			buildPhases = (
+				A9A0443F2A85470B0004C530 /* Sources */,
+				A9A044402A85470B0004C530 /* Frameworks */,
+				A9A044412A85470B0004C530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElectroHelp;
+			productName = ElectroHelp;
+			productReference = A9A044432A85470B0004C530 /* ElectroHelp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9A044582A85470B0004C530 /* ElectroHelpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A044702A85470C0004C530 /* Build configuration list for PBXNativeTarget "ElectroHelpTests" */;
+			buildPhases = (
+				A9A044552A85470B0004C530 /* Sources */,
+				A9A044562A85470B0004C530 /* Frameworks */,
+				A9A044572A85470B0004C530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9A0445B2A85470B0004C530 /* PBXTargetDependency */,
+			);
+			name = ElectroHelpTests;
+			productName = ElectroHelpTests;
+			productReference = A9A044592A85470B0004C530 /* ElectroHelpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9A044622A85470C0004C530 /* ElectroHelpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A044732A85470C0004C530 /* Build configuration list for PBXNativeTarget "ElectroHelpUITests" */;
+			buildPhases = (
+				A9A0445F2A85470C0004C530 /* Sources */,
+				A9A044602A85470C0004C530 /* Frameworks */,
+				A9A044612A85470C0004C530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9A044652A85470C0004C530 /* PBXTargetDependency */,
+			);
+			name = ElectroHelpUITests;
+			productName = ElectroHelpUITests;
+			productReference = A9A044632A85470C0004C530 /* ElectroHelpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9A0443B2A85470A0004C530 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					A9A044422A85470B0004C530 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					A9A044582A85470B0004C530 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A9A044422A85470B0004C530;
+					};
+					A9A044622A85470C0004C530 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = A9A044422A85470B0004C530;
+					};
+				};
+			};
+			buildConfigurationList = A9A0443E2A85470A0004C530 /* Build configuration list for PBXProject "ElectroHelp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9A0443A2A85470A0004C530;
+			productRefGroup = A9A044442A85470B0004C530 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9A044422A85470B0004C530 /* ElectroHelp */,
+				A9A044582A85470B0004C530 /* ElectroHelpTests */,
+				A9A044622A85470C0004C530 /* ElectroHelpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9A044412A85470B0004C530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A044882A854F040004C530 /* TransistorStoryboard.storyboard in Resources */,
+				A9A044862A854EF10004C530 /* CapacitorStoryboard.storyboard in Resources */,
+				A9A044822A854ECE0004C530 /* ResistorStoryboard.storyboard in Resources */,
+				A9A044532A85470B0004C530 /* LaunchScreen.storyboard in Resources */,
+				A9A044502A85470B0004C530 /* Assets.xcassets in Resources */,
+				A9EE74E12B06D43900676DB7 /* TransitorCircuitsStoryboard.storyboard in Resources */,
+				A9A0447E2A854D6E0004C530 /* LogInStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A044572A85470B0004C530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A044612A85470C0004C530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9A0443F2A85470B0004C530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A044472A85470B0004C530 /* AppDelegate.swift in Sources */,
+				A9B532E02B4C719E00E2782A /* TransistorModel.xcdatamodeld in Sources */,
+				A9EE74E52B06D47E00676DB7 /* TransistorCircuitViewController.swift in Sources */,
+				A9CDC2462A86C94100DF45C6 /* Colors.swift in Sources */,
+				A9A044802A854EC20004C530 /* ResistorViewController.swift in Sources */,
+				A9B8290A2AAFB75300FA9BDC /* TransistorModel.swift in Sources */,
+				A9B532E22B4C8E8900E2782A /* CoreDataManager.swift in Sources */,
+				A9A044842A854EE10004C530 /* CapacitorViewController.swift in Sources */,
+				A9A0448A2A854F160004C530 /* TransistorViewController.swift in Sources */,
+				A9A0448C2A854F4A0004C530 /* TabBarViewController.swift in Sources */,
+				A9D3B5172B4DD624000BF49A /* Transistor+CoreDataClass.swift in Sources */,
+				A9A044492A85470B0004C530 /* SceneDelegate.swift in Sources */,
+				A9D3B5182B4DD624000BF49A /* Transistor+CoreDataProperties.swift in Sources */,
+				A9A0447C2A854D590004C530 /* LogInViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A044552A85470B0004C530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A0445E2A85470C0004C530 /* ElectroHelpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9A0445F2A85470C0004C530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A0446A2A85470C0004C530 /* ElectroHelpUITestsLaunchTests.swift in Sources */,
+				A9A044682A85470C0004C530 /* ElectroHelpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9A0445B2A85470B0004C530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9A044422A85470B0004C530 /* ElectroHelp */;
+			targetProxy = A9A0445A2A85470B0004C530 /* PBXContainerItemProxy */;
+		};
+		A9A044652A85470C0004C530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9A044422A85470B0004C530 /* ElectroHelp */;
+			targetProxy = A9A044642A85470C0004C530 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9A044512A85470B0004C530 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9A044522A85470B0004C530 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9A0446B2A85470C0004C530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9A0446C2A85470C0004C530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9A0446E2A85470C0004C530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FTT3MCPFA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElectroHelp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Facultad-de-ingenieria.ElectroHelp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9A0446F2A85470C0004C530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FTT3MCPFA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElectroHelp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Facultad-de-ingenieria.ElectroHelp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9A044712A85470C0004C530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Facultad-de-ingenieria.ElectroHelpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElectroHelp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ElectroHelp";
+			};
+			name = Debug;
+		};
+		A9A044722A85470C0004C530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Facultad-de-ingenieria.ElectroHelpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElectroHelp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ElectroHelp";
+			};
+			name = Release;
+		};
+		A9A044742A85470C0004C530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Facultad-de-ingenieria.ElectroHelpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElectroHelp;
+			};
+			name = Debug;
+		};
+		A9A044752A85470C0004C530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Facultad-de-ingenieria.ElectroHelpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElectroHelp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9A0443E2A85470A0004C530 /* Build configuration list for PBXProject "ElectroHelp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A0446B2A85470C0004C530 /* Debug */,
+				A9A0446C2A85470C0004C530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A0446D2A85470C0004C530 /* Build configuration list for PBXNativeTarget "ElectroHelp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A0446E2A85470C0004C530 /* Debug */,
+				A9A0446F2A85470C0004C530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A044702A85470C0004C530 /* Build configuration list for PBXNativeTarget "ElectroHelpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A044712A85470C0004C530 /* Debug */,
+				A9A044722A85470C0004C530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A044732A85470C0004C530 /* Build configuration list for PBXNativeTarget "ElectroHelpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A044742A85470C0004C530 /* Debug */,
+				A9A044752A85470C0004C530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A9B532DE2B4C719E00E2782A /* TransistorModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A9B532DF2B4C719E00E2782A /* TransistorModel.xcdatamodel */,
+			);
+			currentVersion = A9B532DF2B4C719E00E2782A /* TransistorModel.xcdatamodel */;
+			path = TransistorModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A9A0443B2A85470A0004C530 /* Project object */;
+}

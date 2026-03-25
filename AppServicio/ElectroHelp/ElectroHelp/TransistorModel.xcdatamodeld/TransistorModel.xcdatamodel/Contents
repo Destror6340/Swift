@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22222" systemVersion="22G91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Transistor" representedClassName="Transistor" syncable="YES" codeGenerationType="class">
+        <attribute name="chanel" optional="YES" attributeType="String"/>
+        <attribute name="gateVoltage" optional="YES" attributeType="String"/>
+        <attribute name="hfe" optional="YES" attributeType="String"/>
+        <attribute name="maxCurrent" optional="YES" attributeType="String"/>
+        <attribute name="maxVoltage" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="thresholdVoltage" optional="YES" attributeType="String"/>
+        <attribute name="transconductancegm" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="zeroGateVoltageDrainCurrent" optional="YES" attributeType="String"/>
+    </entity>
+</model>

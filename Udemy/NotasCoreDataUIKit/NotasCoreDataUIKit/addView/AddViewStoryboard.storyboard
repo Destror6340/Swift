@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddViewVC" id="Y6W-OH-hqX" customClass="addViewController" customModule="NotasCoreDataUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n8S-lS-Vv2">
+                                <rect key="frame" x="30" y="118" width="333" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TLV-sh-Zsy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="emm-MY-PIg">
+                                <rect key="frame" x="0.0" y="178" width="393" height="270"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="1lR-N2-u8U"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gg1-k4-c2d">
+                                <rect key="frame" x="50" y="468" width="293" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="kNn-fq-7er"/>
+                                </constraints>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-6N-R2j">
+                                <rect key="frame" x="140" y="638" width="113" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="NhK-6C-Nyy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Guardar"/>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kjm-RX-hev"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="emm-MY-PIg" secondAttribute="trailing" id="2N4-Bd-hkD"/>
+                            <constraint firstItem="ggR-6N-R2j" firstAttribute="top" secondItem="gg1-k4-c2d" secondAttribute="bottom" constant="70" id="45Y-Hb-Ai5"/>
+                            <constraint firstAttribute="trailing" secondItem="gg1-k4-c2d" secondAttribute="trailing" constant="50" id="53A-bd-peD"/>
+                            <constraint firstItem="ggR-6N-R2j" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="140" id="5Hs-kp-4xE"/>
+                            <constraint firstItem="emm-MY-PIg" firstAttribute="top" secondItem="n8S-lS-Vv2" secondAttribute="bottom" constant="20" id="9fo-m0-ac4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="n8S-lS-Vv2" secondAttribute="trailing" constant="30" id="Al6-c5-Oma"/>
+                            <constraint firstItem="n8S-lS-Vv2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="AtX-ea-f46"/>
+                            <constraint firstItem="gg1-k4-c2d" firstAttribute="top" secondItem="emm-MY-PIg" secondAttribute="bottom" constant="20" id="Mhi-c8-fvC"/>
+                            <constraint firstItem="gg1-k4-c2d" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="50" id="RkL-dM-5Ud"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ggR-6N-R2j" secondAttribute="trailing" constant="140" id="dUO-fw-7Yw"/>
+                            <constraint firstItem="emm-MY-PIg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="l34-aI-2Im"/>
+                            <constraint firstItem="n8S-lS-Vv2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xXb-De-dv0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="gg1-k4-c2d" id="J4E-JM-XlI"/>
+                        <outlet property="saveButton" destination="ggR-6N-R2j" id="EeV-7c-0Rs"/>
+                        <outlet property="textField" destination="n8S-lS-Vv2" id="vew-C9-Cue"/>
+                        <outlet property="textView" destination="emm-MY-PIg" id="Vf7-OI-67o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
