@@ -1,2 +1,2 @@
 # Swift
-All may swift example projects
+All my swift example projects
