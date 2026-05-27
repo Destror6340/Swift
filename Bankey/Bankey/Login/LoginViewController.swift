@@ -7,13 +7,22 @@
 
 import UIKit
 
+
+protocol LoginViewControllerDelegate: AnyObject {
+    func didLogin()
+}
+
+
 class LoginViewController: UIViewController {
-    
+
+    //MARK: Views/vars                 
     let appNameLabel = UILabel()
     let subtitleLabel = UILabel()
     let loginView = LoginView()
     let signInButton = UIButton(type: .system)
     let errorLabel = UILabel()
+    
+    weak var delegate: LoginViewControllerDelegate?
     
     var username: String? {
         return loginView.usernameTextField.text
@@ -31,7 +40,10 @@ class LoginViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        signInButton.configuration?.showsActivityIndicator = false
+    }
 }
 
 
@@ -107,7 +119,7 @@ extension LoginViewController {
     }
 }
 
-//MARK:Actions
+//MARK: Actions
 extension LoginViewController {
     @objc private func didTapSignInButton() {
         errorLabel.isEnabled = true
@@ -126,9 +138,11 @@ extension LoginViewController {
         }
         if username == "user" && password == "password" {
             signInButton.configuration?.showsActivityIndicator = true
+            delegate?.didLogin()
         } else{
             errorLabel.isHidden = false
             errorLabel.text = "Incorrect username/password"
+            return
         }
     }
 }
